@@ -1,0 +1,62 @@
+{
+  "name": "IFCAOPlus",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start",
+    "run:android": "react-native run-android",
+    "run:ios": "open ios/IFCAOPlus.xcworkspace",
+    "clean:cache": "watchman watch-del-all && npm start --reset-cache",
+    "clean:package": "rm -rf ./node_modules && yarn",
+    "clean:android": "cd ./android && ./gradlew clean",
+    "clean:ios": "cd ./ios && rm -rf ./Pods && pod install",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@paraboly/react-native-card": "^0.2.11",
+    "axios": "^0.19.0",
+    "native-base": "^2.13.8",
+    "prop-types": "^15.6.1",
+    "react": "16.8.6",
+    "react-native": "0.60.4",
+    "react-native-dotenv": "^0.2.0",
+    "react-native-elements": "^1.2.6",
+    "react-native-gesture-handler": "^1.2.1",
+    "react-native-localization": "^2.1.1",
+    "react-native-material-ripple": "^0.9.1",
+    "react-native-vector-icons": "^6.6.0",
+    "react-navigation": "^3.11.0",
+    "react-redux": "^7.1.0",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-persist": "^5.9.1",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
+    "rn-swipeable-panel": "^1.0.14"
+  },
+  "devDependencies": {
+    "@babel/core": "7.5.5",
+    "@babel/runtime": "7.5.5",
+    "@react-native-community/eslint-config": "0.0.3",
+    "babel-jest": "24.8.0",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "eslint": "6.1.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-import-resolver-babel-module": "^5.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-react-hooks": "^1.6.1",
+    "jest": "24.8.0",
+    "metro-react-native-babel-preset": "0.54.1",
+    "moxios": "^0.4.0",
+    "react-test-renderer": "16.8.6",
+    "redux-mock-store": "^1.5.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
