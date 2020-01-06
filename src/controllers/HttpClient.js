@@ -7,7 +7,9 @@ import { API_URL } from 'react-native-dotenv';
   timeouts and middleware used for each request.
 */
 const client = axios.create({
-  baseURL: "http://35.197.137.111:80/alfaAPI",
+  baseURL: "http://35.198.219.220:2121/alfaAPI/approval",
+  // baseURL: "http://35.198.219.220:2121/alfaAPI/approval",
+  
   timeout: 10000,
   headers: {
     Accept: "application/json",

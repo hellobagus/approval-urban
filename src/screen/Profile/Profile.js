@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect } from "react";
-import { StatusBar, TouchableOpacity, Image } from "react-native";
+import { StatusBar, TouchableOpacity, Image, Alert } from "react-native";
 import {
     Container,
     Content,
@@ -25,7 +25,20 @@ import getUser from "selectors/UserSelectors";
 function Profile(props) {
     const user = useSelector(state => getUser(state));
     const dispatch = useDispatch();
-    const logoutUser = useCallback(() => dispatch(logout()), [dispatch]);
+    const logoutUser = useCallback(() => {
+        Alert.alert(
+            "Are you sure ?",
+            "Press OK if you want to logging out !",
+            [
+                {
+                    text: "Cancel",
+                    style: "cancel"
+                },
+                { text: "OK", onPress: () => dispatch(logout()) }
+            ],
+            { cancelable: false }
+        );
+    }, [dispatch]);
 
     useEffect(() => {
         if (user === null) {
@@ -46,6 +59,16 @@ function Profile(props) {
                 contentContainerStyle={Style.layoutContent}
             >
                 <View style={styles.owner}>
+                <TouchableOpacity
+                        style={styles.btnBack}
+                       
+                    >
+                        <Icon
+                            name="ios-arrow-dropleft"
+                            style={{ fontSize: 30, color: "#fff" }}
+                            onPress={()=>props.navigation.navigate("Home")}
+                        />
+                    </TouchableOpacity>
                     <TouchableOpacity
                         style={styles.btnSetting}
                         onPress={() => props.navigation.navigate("Setting")}
@@ -57,21 +80,27 @@ function Profile(props) {
                         <Text>{"  SETTINGS"}</Text>
                     </TouchableOpacity>
 
-                    <View style={styles.ownerAvatar}>
-                        <Image
-                            source={{ uri: user.pict }}
-                            style={styles.ownerAvatarImg}
-                        />
-                    </View>
-
-                    <View style={styles.ownerInfo}>
-                        <View>
-                            <Text style={styles.ownerName}>{user.name}</Text>
-                            <Text style={styles.ownerLocation}>
-                                {user.Group}
-                            </Text>
+                    {user && (
+                        <View style={styles.ownerAvatar}>
+                            <Image
+                                source={{ uri: user.pict }}
+                                style={styles.ownerAvatarImg}
+                            />
                         </View>
-                    </View>
+                    )}
+
+                    {user && (
+                        <View style={styles.ownerInfo}>
+                            <View>
+                                <Text style={styles.ownerName}>
+                                    {user.name}
+                                </Text>
+                                <Text style={styles.ownerLocation}>
+                                    {user.Group}
+                                </Text>
+                            </View>
+                        </View>
+                    )}
                 </View>
 
                 <List style={styles.infoTab}>
@@ -98,7 +127,10 @@ function Profile(props) {
                             </Right>
                         </ListItem> */}
 
-                    <ListItem style={styles.infoItem} onPress={()=>props.navigation.navigate("ChangePass")}>
+                    <ListItem
+                        style={styles.infoItem}
+                        onPress={() => props.navigation.navigate("ChangePass")}
+                    >
                         <View style={styles.infoIcon} />
                         <View style={{ alignSelf: "center" }}>
                             <Text style={styles.infoHeader}>
@@ -173,6 +205,24 @@ function Profile(props) {
                             </Text>
                             <Text style={styles.infoDesc}>
                                 {"Description about us"}
+                            </Text>
+                        </View>
+
+                        <Right style={{ position: "absolute", right: 10 }}>
+                            <Icon
+                                name="ios-arrow-dropright"
+                                style={{ fontSize: 30 }}
+                            />
+                        </Right>
+                    </ListItem>
+                    <ListItem
+                        style={[styles.infoItem, styles.infoItemLast]}
+                        onPress={logoutUser}
+                    >
+                        <View style={styles.infoIcon} />
+                        <View style={{ alignSelf: "center" }}>
+                            <Text style={styles.infoHeader}>
+                                {"Logout".toUpperCase()}
                             </Text>
                         </View>
 

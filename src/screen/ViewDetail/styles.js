@@ -430,7 +430,7 @@ export default {
   },
   itemLocation: {
     color: '#fff',
-    fontSize: 11,
+    fontSize: 12,
     fontFamily: 'Montserrat-Regular',
     marginBottom: 10,
     paddingHorizontal: 20,

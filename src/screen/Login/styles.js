@@ -8,6 +8,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: Colors.white,
   },
+  eye: {
+    position: 'absolute',
+    right: 3,
+    height: 40,
+    width: 35,
+    padding: 5,
+    top: 150
+  },
   logo: {
     justifyContent: 'center',
     alignItems: 'center',

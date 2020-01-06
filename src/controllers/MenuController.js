@@ -3,14 +3,29 @@ import httpClient from './HttpClient';
 
 class MenuController {
   constructor() {
-    this.basePath = '/c_menu';
+    // this.basePath = '/c_menu';
     this.appPath = '/c_approval';
   }
+
+
+  getSearch =  async (query) => {
+ 
+    try {
+      const result = await httpClient.request({
+        url: `${this.appPath}/viewMenu?q=${query.toLowerCase()}`,
+        method: "GET",
+      });
+      return result;
+    } catch (error) {
+      return Promise.reject(error);
+    }
+  }
+
 
   getMenu = async (userId) => {
     try {
       const result = await httpClient.request({
-        url: `${this.basePath}/groupMenu`,
+        url: `${this.appPath}/groupMenu`,
         method: "POST",
         data : {
           approval_user : userId
@@ -25,14 +40,18 @@ class MenuController {
   getDetail = async (app_user,approval_id) => {
     try {
       const result = await httpClient.request({
-        url: `${this.basePath}/viewMenu`,
+        url: `${this.appPath}/viewMenu`,
         method: "POST",
-        data : {
+        headers: {
+          'Content-Type': 'application/json'
+        },
+       data : {
           approval_user : app_user,
           approval_id : approval_id
         }
       });
       return result;
+
     } catch (error) {
       return Promise.reject(error);
     }
@@ -41,7 +60,7 @@ class MenuController {
   getOtorisasi = async (entity,docNo) => {
     try {
       const result = await httpClient.request({
-        url: `${this.basePath}/otorisasi`,
+        url: `${this.appPath}/otorisasi`,
         method: "POST",
         data : {
           entity_cd : entity,
@@ -63,7 +82,13 @@ class MenuController {
           entity_cd : data.entity_cd,
           doc_no : data.doc_no,
           status,
-          remarks : data.reason_remarks
+          doc_date : data.doc_date,
+          remarks : data.reason_remarks,
+         approval_id : data.approval_id,
+         trx_type : data.trx_type,
+         approve_seq : data.approve_seq,
+         level_no : data.level_no,
+         approval_user : data.approval_user
         }
       });
 

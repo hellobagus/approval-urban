@@ -1,5 +1,6 @@
 import MenuController from '../controllers/MenuController';
 
+
 export const actionTypes = {
   MENU: 'MENU',
   MENU_REQUEST: 'MENU_REQUEST',
@@ -20,7 +21,13 @@ export const actionTypes = {
   APPROVE_REQUEST: 'APPROVE_REQUEST',
   APPROVE_ERROR: 'APPROVE_ERROR',
   APPROVE_SUCCESS: 'APPROVE_SUCCESS',
+
+
+
+
 };
+
+
 
 const menuRequest = () => ({
   type: actionTypes.MENU,
@@ -79,11 +86,15 @@ const approveError = error => ({
   error,
 });
 
+
+
+
 export const getMenu = (userId) => async (dispatch) => {
   dispatch(menuRequest());
   try {
     const menu = await MenuController.getMenu(userId);
-    dispatch(menuSuccess(menu));
+    dispatch(menuSuccess(menu))
+    
   } catch (error) {
     dispatch(menuError(error));
   }
@@ -113,17 +124,17 @@ export const getOtorisasi = (entity,docNo,modules) => async (dispatch) => {
   }
 };
 
-export const approve = (status,data,UserId) => async (dispatch) => {
+export const approve = (status,data,UserId, approval_id, trx_type, approve_seq, level_no) => async (dispatch) => {
   dispatch(approveRequest());
 
   try {
-    const approve = await MenuController.setApprove(status,data);
+    const approve = await MenuController.setApprove(status,data,UserId, approval_id, trx_type, approve_seq, level_no);
     console.log('approve',approve);
     alert(approve.Pesan)
     dispatch(approveSuccess(approve));
 
     const menu = await MenuController.getMenu(UserId);
-    menu.Data[0].total_doc--;
+    menu.Data[0].total_doc;
     dispatch(menuSuccess(menu));
   } catch (error) {
     dispatch(approveError(error));

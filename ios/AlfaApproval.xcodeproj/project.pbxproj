@@ -6,8 +6,8 @@
 	objectVersion = 46;
 	objects = {
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* IFCAOPlusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* IFCAOPlusTests.m */; };
-		0EBFD7D119106E8A1C6559CE /* libPods-IFCAOPlusTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2841A80E811AE6813EAC8E3 /* libPods-IFCAOPlusTests.a */; };
+		00E356F31AD99517003FC87E /* AlfaApprovalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AlfaApprovalTests.m */; };
+		0EBFD7D119106E8A1C6559CE /* libPods-AlfaApprovalTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2841A80E811AE6813EAC8E3 /* libPods-AlfaApprovalTests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -15,13 +15,31 @@
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* IFCAOPlusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* IFCAOPlusTests.m */; };
-		39661FB9D78F4867E7A82A7C /* libPods-IFCAOPlus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B585754B7D529901B9E3923 /* libPods-IFCAOPlus.a */; };
-		DEA2584331FDB88C78C72556 /* libPods-IFCAOPlus-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2CC7B0FEDACF36C5ACD832 /* libPods-IFCAOPlus-tvOSTests.a */; };
-		E450DDF6859F1AB0B90B8B12 /* libPods-IFCAOPlus-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 740E274149E6BA5A64F718A4 /* libPods-IFCAOPlus-tvOS.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* AlfaApprovalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AlfaApprovalTests.m */; };
+		39661FB9D78F4867E7A82A7C /* libPods-AlfaApproval.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B585754B7D529901B9E3923 /* libPods-AlfaApproval.a */; };
+		DEA2584331FDB88C78C72556 /* libPods-AlfaApproval-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2CC7B0FEDACF36C5ACD832 /* libPods-AlfaApproval-tvOSTests.a */; };
+		E450DDF6859F1AB0B90B8B12 /* libPods-AlfaApproval-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 740E274149E6BA5A64F718A4 /* libPods-AlfaApproval-tvOS.a */; };
 		81795B465C314029BFA5E0E0 /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A17CBC4E1024769B9B8B36D /* Roboto_medium.ttf */; };
 		5B5E833CF7DC4CD9909C5865 /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E093A275FF9415494C0571A /* Roboto.ttf */; };
 		B7BF6961202C433BB74540EE /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DED75BE34DF74294AEA69ECD /* rubicon-icon-font.ttf */; };
+		049C4DF74B27430EBB811F88 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0129AE822A1243F0A0CF1448 /* Montserrat-Regular.ttf */; };
+		59BB6607AB634A37855226CA /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4A4B9CFA1F14883B1CD51BE /* Montserrat-SemiBold.ttf */; };
+		058DAD4B04D4406F8293C533 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD9F3A5E857345B98622B181 /* AntDesign.ttf */; };
+		FECC9CFFC7B848A0A2CA31BF /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 472F4642C70D40E78272B485 /* Entypo.ttf */; };
+		9BED6279C3CA43E19D71E895 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 51D3424490BE4D1998D61C8D /* EvilIcons.ttf */; };
+		CF230026AB8243B79F725DE1 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF746481E9FB4B889EBD5E43 /* Feather.ttf */; };
+		7D6C55FA26404C21B6AB0EC3 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DBD4DB9393943138676A327 /* FontAwesome.ttf */; };
+		C86BBDC9C8994C0280246250 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7E7CE2257D145FC846B7524 /* FontAwesome5_Brands.ttf */; };
+		713C34C0366A4B4EAB612632 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5931A4556D6241669B3B6578 /* FontAwesome5_Regular.ttf */; };
+		19F96455B21746DC80264275 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F21D5A9BB9D4384B476FB34 /* FontAwesome5_Solid.ttf */; };
+		B458B8987AE54C5AA2CBFE46 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13277C3A92334B6F817770BE /* Fontisto.ttf */; };
+		F3C0271B1D0C4C4198235A0F /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 765D2AB3C653404FBF6F5F33 /* Foundation.ttf */; };
+		3B54EA4A945C4A398C8970B6 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0D5CE9E49D94E7FB5BCD1D1 /* Ionicons.ttf */; };
+		1D847E376EAA4D0180C925A7 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16AB6885EB0C488DB9917629 /* MaterialCommunityIcons.ttf */; };
+		18A5ABD74F3F427FAC1F2074 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D288DA47FB304B18B9339079 /* MaterialIcons.ttf */; };
+		DFD7A4A93C344F25B4FA9278 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2569D58DCAB344E3BF766A0A /* Octicons.ttf */; };
+		3E9EFEC553744812A8174237 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 367B25489EC34210B5095558 /* SimpleLineIcons.ttf */; };
+		E8559D2BEA7D4F9A99FE09D5 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEDD2CFD8EDE42F8ABDCB584 /* Zocial.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,46 +48,46 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = IFCAOPlus;
+			remoteInfo = AlfaApproval;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "IFCAOPlus-tvOS";
+			remoteInfo = "AlfaApproval-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* IFCAOPlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IFCAOPlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* AlfaApprovalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlfaApprovalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* IFCAOPlusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFCAOPlusTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* IFCAOPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IFCAOPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = IFCAOPlus/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = IFCAOPlus/AppDelegate.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* AlfaApprovalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlfaApprovalTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* AlfaApproval.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlfaApproval.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AlfaApproval/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AlfaApproval/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = IFCAOPlus/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = IFCAOPlus/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = IFCAOPlus/main.m; sourceTree = "<group>"; };
-		1D6AB0DD4ED9912008CB0797 /* Pods-IFCAOPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFCAOPlus.release.xcconfig"; path = "Target Support Files/Pods-IFCAOPlus/Pods-IFCAOPlus.release.xcconfig"; sourceTree = "<group>"; };
-		2246B126FA34C87F01B709E3 /* Pods-IFCAOPlus-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFCAOPlus-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-IFCAOPlus-tvOS/Pods-IFCAOPlus-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* IFCAOPlus-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IFCAOPlus-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* IFCAOPlus-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IFCAOPlus-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		514ED44491B6887CA80FF9E5 /* Pods-IFCAOPlus-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFCAOPlus-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-IFCAOPlus-tvOSTests/Pods-IFCAOPlus-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		740E274149E6BA5A64F718A4 /* libPods-IFCAOPlus-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IFCAOPlus-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		79145A7763FC0F34EF94E186 /* Pods-IFCAOPlusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFCAOPlusTests.debug.xcconfig"; path = "Target Support Files/Pods-IFCAOPlusTests/Pods-IFCAOPlusTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7B585754B7D529901B9E3923 /* libPods-IFCAOPlus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IFCAOPlus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		80A2970F510AB58BFE7F3A4E /* Pods-IFCAOPlusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFCAOPlusTests.release.xcconfig"; path = "Target Support Files/Pods-IFCAOPlusTests/Pods-IFCAOPlusTests.release.xcconfig"; sourceTree = "<group>"; };
-		B2EFD20170B271E0C8D224B1 /* Pods-IFCAOPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFCAOPlus.debug.xcconfig"; path = "Target Support Files/Pods-IFCAOPlus/Pods-IFCAOPlus.debug.xcconfig"; sourceTree = "<group>"; };
-		BF64793863DC13ED298B3E9B /* Pods-IFCAOPlus-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFCAOPlus-tvOS.release.xcconfig"; path = "Target Support Files/Pods-IFCAOPlus-tvOS/Pods-IFCAOPlus-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = AlfaApproval/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AlfaApproval/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = AlfaApproval/main.m; sourceTree = "<group>"; };
+		1D6AB0DD4ED9912008CB0797 /* Pods-AlfaApproval.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlfaApproval.release.xcconfig"; path = "Target Support Files/Pods-AlfaApproval/Pods-AlfaApproval.release.xcconfig"; sourceTree = "<group>"; };
+		2246B126FA34C87F01B709E3 /* Pods-AlfaApproval-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlfaApproval-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-AlfaApproval-tvOS/Pods-AlfaApproval-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* AlfaApproval-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AlfaApproval-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* AlfaApproval-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AlfaApproval-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		514ED44491B6887CA80FF9E5 /* Pods-AlfaApproval-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlfaApproval-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-AlfaApproval-tvOSTests/Pods-AlfaApproval-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		740E274149E6BA5A64F718A4 /* libPods-AlfaApproval-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AlfaApproval-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79145A7763FC0F34EF94E186 /* Pods-AlfaApprovalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlfaApprovalTests.debug.xcconfig"; path = "Target Support Files/Pods-AlfaApprovalTests/Pods-AlfaApprovalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B585754B7D529901B9E3923 /* libPods-AlfaApproval.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AlfaApproval.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80A2970F510AB58BFE7F3A4E /* Pods-AlfaApprovalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlfaApprovalTests.release.xcconfig"; path = "Target Support Files/Pods-AlfaApprovalTests/Pods-AlfaApprovalTests.release.xcconfig"; sourceTree = "<group>"; };
+		B2EFD20170B271E0C8D224B1 /* Pods-AlfaApproval.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlfaApproval.debug.xcconfig"; path = "Target Support Files/Pods-AlfaApproval/Pods-AlfaApproval.debug.xcconfig"; sourceTree = "<group>"; };
+		BF64793863DC13ED298B3E9B /* Pods-AlfaApproval-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlfaApproval-tvOS.release.xcconfig"; path = "Target Support Files/Pods-AlfaApproval-tvOS/Pods-AlfaApproval-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		C48641BE22F1E8D800040CC0 /* libReact-Core.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-Core.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE2CC7B0FEDACF36C5ACD832 /* libPods-IFCAOPlus-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IFCAOPlus-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2841A80E811AE6813EAC8E3 /* libPods-IFCAOPlusTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IFCAOPlusTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE2CC7B0FEDACF36C5ACD832 /* libPods-AlfaApproval-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AlfaApproval-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2841A80E811AE6813EAC8E3 /* libPods-AlfaApprovalTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AlfaApprovalTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F2A054E1E5A56B65196F16B1 /* Pods-IFCAOPlus-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFCAOPlus-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-IFCAOPlus-tvOSTests/Pods-IFCAOPlus-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		F2A054E1E5A56B65196F16B1 /* Pods-AlfaApproval-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlfaApproval-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-AlfaApproval-tvOSTests/Pods-AlfaApproval-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		7A17CBC4E1024769B9B8B36D /* Roboto_medium.ttf */ = {isa = PBXFileReference; name = "Roboto_medium.ttf"; path = "../node_modules/native-base/Fonts/Roboto_medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		7E093A275FF9415494C0571A /* Roboto.ttf */ = {isa = PBXFileReference; name = "Roboto.ttf"; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		DED75BE34DF74294AEA69ECD /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
@@ -89,6 +107,24 @@
 		E88EBAFDFC1344B9BA83A062 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		E9D333E751FE41F7A68FF1D2 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		2F9C41A23CDD404FA9D68C4B /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0129AE822A1243F0A0CF1448 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; name = "Montserrat-Regular.ttf"; path = "../assets/fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C4A4B9CFA1F14883B1CD51BE /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; name = "Montserrat-SemiBold.ttf"; path = "../assets/fonts/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FD9F3A5E857345B98622B181 /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../node_modules/native-base/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		472F4642C70D40E78272B485 /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		51D3424490BE4D1998D61C8D /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/native-base/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FF746481E9FB4B889EBD5E43 /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/native-base/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6DBD4DB9393943138676A327 /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B7E7CE2257D145FC846B7524 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5931A4556D6241669B3B6578 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3F21D5A9BB9D4384B476FB34 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		13277C3A92334B6F817770BE /* Fontisto.ttf */ = {isa = PBXFileReference; name = "Fontisto.ttf"; path = "../node_modules/native-base/Fonts/Fontisto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		765D2AB3C653404FBF6F5F33 /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/native-base/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F0D5CE9E49D94E7FB5BCD1D1 /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/native-base/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		16AB6885EB0C488DB9917629 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/native-base/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D288DA47FB304B18B9339079 /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/native-base/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2569D58DCAB344E3BF766A0A /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/native-base/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		367B25489EC34210B5095558 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/native-base/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CEDD2CFD8EDE42F8ABDCB584 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EBFD7D119106E8A1C6559CE /* libPods-IFCAOPlusTests.a in Frameworks */,
+				0EBFD7D119106E8A1C6559CE /* libPods-AlfaApprovalTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39661FB9D78F4867E7A82A7C /* libPods-IFCAOPlus.a in Frameworks */,
+				39661FB9D78F4867E7A82A7C /* libPods-AlfaApproval.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E450DDF6859F1AB0B90B8B12 /* libPods-IFCAOPlus-tvOS.a in Frameworks */,
+				E450DDF6859F1AB0B90B8B12 /* libPods-AlfaApproval-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,20 +156,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEA2584331FDB88C78C72556 /* libPods-IFCAOPlus-tvOSTests.a in Frameworks */,
+				DEA2584331FDB88C78C72556 /* libPods-AlfaApproval-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* IFCAOPlusTests */ = {
+		00E356EF1AD99517003FC87E /* AlfaApprovalTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* IFCAOPlusTests.m */,
+				00E356F21AD99517003FC87E /* AlfaApprovalTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = IFCAOPlusTests;
+			path = AlfaApprovalTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -144,7 +180,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* IFCAOPlus */ = {
+		13B07FAE1A68108700A75B9A /* AlfaApproval */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -155,7 +191,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = IFCAOPlus;
+			name = AlfaApproval;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -164,10 +200,10 @@
 				C48641BE22F1E8D800040CC0 /* libReact-Core.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				7B585754B7D529901B9E3923 /* libPods-IFCAOPlus.a */,
-				740E274149E6BA5A64F718A4 /* libPods-IFCAOPlus-tvOS.a */,
-				DE2CC7B0FEDACF36C5ACD832 /* libPods-IFCAOPlus-tvOSTests.a */,
-				E2841A80E811AE6813EAC8E3 /* libPods-IFCAOPlusTests.a */,
+				7B585754B7D529901B9E3923 /* libPods-AlfaApproval.a */,
+				740E274149E6BA5A64F718A4 /* libPods-AlfaApproval-tvOS.a */,
+				DE2CC7B0FEDACF36C5ACD832 /* libPods-AlfaApproval-tvOSTests.a */,
+				E2841A80E811AE6813EAC8E3 /* libPods-AlfaApprovalTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -175,14 +211,14 @@
 		37A6BEA0AD4A254363D6F4B9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B2EFD20170B271E0C8D224B1 /* Pods-IFCAOPlus.debug.xcconfig */,
-				1D6AB0DD4ED9912008CB0797 /* Pods-IFCAOPlus.release.xcconfig */,
-				2246B126FA34C87F01B709E3 /* Pods-IFCAOPlus-tvOS.debug.xcconfig */,
-				BF64793863DC13ED298B3E9B /* Pods-IFCAOPlus-tvOS.release.xcconfig */,
-				514ED44491B6887CA80FF9E5 /* Pods-IFCAOPlus-tvOSTests.debug.xcconfig */,
-				F2A054E1E5A56B65196F16B1 /* Pods-IFCAOPlus-tvOSTests.release.xcconfig */,
-				79145A7763FC0F34EF94E186 /* Pods-IFCAOPlusTests.debug.xcconfig */,
-				80A2970F510AB58BFE7F3A4E /* Pods-IFCAOPlusTests.release.xcconfig */,
+				B2EFD20170B271E0C8D224B1 /* Pods-AlfaApproval.debug.xcconfig */,
+				1D6AB0DD4ED9912008CB0797 /* Pods-AlfaApproval.release.xcconfig */,
+				2246B126FA34C87F01B709E3 /* Pods-AlfaApproval-tvOS.debug.xcconfig */,
+				BF64793863DC13ED298B3E9B /* Pods-AlfaApproval-tvOS.release.xcconfig */,
+				514ED44491B6887CA80FF9E5 /* Pods-AlfaApproval-tvOSTests.debug.xcconfig */,
+				F2A054E1E5A56B65196F16B1 /* Pods-AlfaApproval-tvOSTests.release.xcconfig */,
+				79145A7763FC0F34EF94E186 /* Pods-AlfaApprovalTests.debug.xcconfig */,
+				80A2970F510AB58BFE7F3A4E /* Pods-AlfaApprovalTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -192,6 +228,24 @@
 			children = (
 				DEC4B0E40B0147009310FAA7 /* Montserrat-Regular.ttf */,
 				BE2FA446B42C45CFAE459CB5 /* Montserrat-SemiBold.ttf */,
+				0129AE822A1243F0A0CF1448 /* Montserrat-Regular.ttf */,
+				C4A4B9CFA1F14883B1CD51BE /* Montserrat-SemiBold.ttf */,
+				FD9F3A5E857345B98622B181 /* AntDesign.ttf */,
+				472F4642C70D40E78272B485 /* Entypo.ttf */,
+				51D3424490BE4D1998D61C8D /* EvilIcons.ttf */,
+				FF746481E9FB4B889EBD5E43 /* Feather.ttf */,
+				6DBD4DB9393943138676A327 /* FontAwesome.ttf */,
+				B7E7CE2257D145FC846B7524 /* FontAwesome5_Brands.ttf */,
+				5931A4556D6241669B3B6578 /* FontAwesome5_Regular.ttf */,
+				3F21D5A9BB9D4384B476FB34 /* FontAwesome5_Solid.ttf */,
+				13277C3A92334B6F817770BE /* Fontisto.ttf */,
+				765D2AB3C653404FBF6F5F33 /* Foundation.ttf */,
+				F0D5CE9E49D94E7FB5BCD1D1 /* Ionicons.ttf */,
+				16AB6885EB0C488DB9917629 /* MaterialCommunityIcons.ttf */,
+				D288DA47FB304B18B9339079 /* MaterialIcons.ttf */,
+				2569D58DCAB344E3BF766A0A /* Octicons.ttf */,
+				367B25489EC34210B5095558 /* SimpleLineIcons.ttf */,
+				CEDD2CFD8EDE42F8ABDCB584 /* Zocial.ttf */,
 			);
 			name = Resources;
 			path = "";
@@ -207,9 +261,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* IFCAOPlus */,
+				13B07FAE1A68108700A75B9A /* AlfaApproval */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* IFCAOPlusTests */,
+				00E356EF1AD99517003FC87E /* AlfaApprovalTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				37A6BEA0AD4A254363D6F4B9 /* Pods */,
@@ -223,10 +277,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* IFCAOPlus.app */,
-				00E356EE1AD99517003FC87E /* IFCAOPlusTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* IFCAOPlus-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* IFCAOPlus-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* AlfaApproval.app */,
+				00E356EE1AD99517003FC87E /* AlfaApprovalTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* AlfaApproval-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* AlfaApproval-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -277,9 +331,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* IFCAOPlusTests */ = {
+		00E356ED1AD99517003FC87E /* AlfaApprovalTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "IFCAOPlusTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "AlfaApprovalTests" */;
 			buildPhases = (
 				6DC7183D216C05AAC108985D /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -291,14 +345,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = IFCAOPlusTests;
-			productName = IFCAOPlusTests;
-			productReference = 00E356EE1AD99517003FC87E /* IFCAOPlusTests.xctest */;
+			name = AlfaApprovalTests;
+			productName = AlfaApprovalTests;
+			productReference = 00E356EE1AD99517003FC87E /* AlfaApprovalTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* IFCAOPlus */ = {
+		13B07F861A680F5B00A75B9A /* AlfaApproval */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "IFCAOPlus" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "AlfaApproval" */;
 			buildPhases = (
 				3AC473D8A1AEAE080C1DA3AC /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -312,14 +366,14 @@
 			);
 			dependencies = (
 			);
-			name = IFCAOPlus;
-			productName = IFCAOPlus;
-			productReference = 13B07F961A680F5B00A75B9A /* IFCAOPlus.app */;
+			name = AlfaApproval;
+			productName = AlfaApproval;
+			productReference = 13B07F961A680F5B00A75B9A /* AlfaApproval.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* IFCAOPlus-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* AlfaApproval-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "IFCAOPlus-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "AlfaApproval-tvOS" */;
 			buildPhases = (
 				CE4D95ADDE5967AE7D450C8E /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -332,14 +386,14 @@
 			);
 			dependencies = (
 			);
-			name = "IFCAOPlus-tvOS";
-			productName = "IFCAOPlus-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* IFCAOPlus-tvOS.app */;
+			name = "AlfaApproval-tvOS";
+			productName = "AlfaApproval-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* AlfaApproval-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* IFCAOPlus-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* AlfaApproval-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "IFCAOPlus-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "AlfaApproval-tvOSTests" */;
 			buildPhases = (
 				3F35A38203DE0F2F2DC23FB9 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -351,9 +405,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "IFCAOPlus-tvOSTests";
-			productName = "IFCAOPlus-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* IFCAOPlus-tvOSTests.xctest */;
+			name = "AlfaApproval-tvOSTests";
+			productName = "AlfaApproval-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* AlfaApproval-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -380,7 +434,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "IFCAOPlus" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "AlfaApproval" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -394,10 +448,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* IFCAOPlus */,
-				00E356ED1AD99517003FC87E /* IFCAOPlusTests */,
-				2D02E47A1E0B4A5D006451C7 /* IFCAOPlus-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* IFCAOPlus-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* AlfaApproval */,
+				00E356ED1AD99517003FC87E /* AlfaApprovalTests */,
+				2D02E47A1E0B4A5D006451C7 /* AlfaApproval-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* AlfaApproval-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -435,6 +489,24 @@
 				E0A963CDDFFE4829BD5AED67 /* Octicons.ttf in Resources */,
 				E9AAE61CDE05431CA2692F65 /* SimpleLineIcons.ttf in Resources */,
 				68ECE23BD15B4197B59764FC /* Zocial.ttf in Resources */,
+				049C4DF74B27430EBB811F88 /* Montserrat-Regular.ttf in Resources */,
+				59BB6607AB634A37855226CA /* Montserrat-SemiBold.ttf in Resources */,
+				058DAD4B04D4406F8293C533 /* AntDesign.ttf in Resources */,
+				FECC9CFFC7B848A0A2CA31BF /* Entypo.ttf in Resources */,
+				9BED6279C3CA43E19D71E895 /* EvilIcons.ttf in Resources */,
+				CF230026AB8243B79F725DE1 /* Feather.ttf in Resources */,
+				7D6C55FA26404C21B6AB0EC3 /* FontAwesome.ttf in Resources */,
+				C86BBDC9C8994C0280246250 /* FontAwesome5_Brands.ttf in Resources */,
+				713C34C0366A4B4EAB612632 /* FontAwesome5_Regular.ttf in Resources */,
+				19F96455B21746DC80264275 /* FontAwesome5_Solid.ttf in Resources */,
+				B458B8987AE54C5AA2CBFE46 /* Fontisto.ttf in Resources */,
+				F3C0271B1D0C4C4198235A0F /* Foundation.ttf in Resources */,
+				3B54EA4A945C4A398C8970B6 /* Ionicons.ttf in Resources */,
+				1D847E376EAA4D0180C925A7 /* MaterialCommunityIcons.ttf in Resources */,
+				18A5ABD74F3F427FAC1F2074 /* MaterialIcons.ttf in Resources */,
+				DFD7A4A93C344F25B4FA9278 /* Octicons.ttf in Resources */,
+				3E9EFEC553744812A8174237 /* SimpleLineIcons.ttf in Resources */,
+				E8559D2BEA7D4F9A99FE09D5 /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,7 +550,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IFCAOPlus/Pods-IFCAOPlus-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-AlfaApproval/Pods-AlfaApproval-resources.sh",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -519,7 +591,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IFCAOPlus/Pods-IFCAOPlus-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlfaApproval/Pods-AlfaApproval-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
@@ -551,7 +623,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-IFCAOPlus-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AlfaApproval-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -573,7 +645,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-IFCAOPlus-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AlfaApproval-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -595,7 +667,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-IFCAOPlusTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AlfaApprovalTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -617,7 +689,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-IFCAOPlus-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AlfaApproval-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -669,7 +741,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* IFCAOPlusTests.m in Sources */,
+				00E356F31AD99517003FC87E /* AlfaApprovalTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,7 +767,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* IFCAOPlusTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* AlfaApprovalTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,12 +776,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* IFCAOPlus */;
+			target = 13B07F861A680F5B00A75B9A /* AlfaApproval */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* IFCAOPlus-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* AlfaApproval-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -721,7 +793,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = IFCAOPlus;
+			path = AlfaApproval;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -729,14 +801,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79145A7763FC0F34EF94E186 /* Pods-IFCAOPlusTests.debug.xcconfig */;
+			baseConfigurationReference = 79145A7763FC0F34EF94E186 /* Pods-AlfaApprovalTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = IFCAOPlusTests/Info.plist;
+				INFOPLIST_FILE = AlfaApprovalTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -746,17 +818,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IFCAOPlus.app/IFCAOPlus";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlfaApproval.app/AlfaApproval";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80A2970F510AB58BFE7F3A4E /* Pods-IFCAOPlusTests.release.xcconfig */;
+			baseConfigurationReference = 80A2970F510AB58BFE7F3A4E /* Pods-AlfaApprovalTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = IFCAOPlusTests/Info.plist;
+				INFOPLIST_FILE = AlfaApprovalTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -766,18 +838,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IFCAOPlus.app/IFCAOPlus";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlfaApproval.app/AlfaApproval";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2EFD20170B271E0C8D224B1 /* Pods-IFCAOPlus.debug.xcconfig */;
+			baseConfigurationReference = B2EFD20170B271E0C8D224B1 /* Pods-AlfaApproval.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				INFOPLIST_FILE = IFCAOPlus/Info.plist;
+				INFOPLIST_FILE = AlfaApproval/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -785,18 +857,18 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ifcasoftware.ifcaoplus;
-				PRODUCT_NAME = IFCAOPlus;
+				PRODUCT_NAME = AlfaApproval;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D6AB0DD4ED9912008CB0797 /* Pods-IFCAOPlus.release.xcconfig */;
+			baseConfigurationReference = 1D6AB0DD4ED9912008CB0797 /* Pods-AlfaApproval.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = IFCAOPlus/Info.plist;
+				INFOPLIST_FILE = AlfaApproval/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -804,14 +876,14 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ifcasoftware.ifcaoplus;
-				PRODUCT_NAME = IFCAOPlus;
+				PRODUCT_NAME = AlfaApproval;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2246B126FA34C87F01B709E3 /* Pods-IFCAOPlus-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 2246B126FA34C87F01B709E3 /* Pods-AlfaApproval-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -822,7 +894,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "IFCAOPlus-tvOS/Info.plist";
+				INFOPLIST_FILE = "AlfaApproval-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -839,7 +911,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF64793863DC13ED298B3E9B /* Pods-IFCAOPlus-tvOS.release.xcconfig */;
+			baseConfigurationReference = BF64793863DC13ED298B3E9B /* Pods-AlfaApproval-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -850,7 +922,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "IFCAOPlus-tvOS/Info.plist";
+				INFOPLIST_FILE = "AlfaApproval-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -867,7 +939,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 514ED44491B6887CA80FF9E5 /* Pods-IFCAOPlus-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 514ED44491B6887CA80FF9E5 /* Pods-AlfaApproval-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -877,24 +949,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "IFCAOPlus-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "AlfaApproval-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.IFCAOPlus-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.AlfaApproval-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IFCAOPlus-tvOS.app/IFCAOPlus-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlfaApproval-tvOS.app/AlfaApproval-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2A054E1E5A56B65196F16B1 /* Pods-IFCAOPlus-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = F2A054E1E5A56B65196F16B1 /* Pods-AlfaApproval-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -904,17 +976,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "IFCAOPlus-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "AlfaApproval-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.IFCAOPlus-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.AlfaApproval-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IFCAOPlus-tvOS.app/IFCAOPlus-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlfaApproval-tvOS.app/AlfaApproval-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -1023,7 +1095,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "IFCAOPlusTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "AlfaApprovalTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -1032,7 +1104,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "IFCAOPlus" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "AlfaApproval" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1041,7 +1113,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "IFCAOPlus-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "AlfaApproval-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -1050,7 +1122,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "IFCAOPlus-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "AlfaApproval-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -1059,7 +1131,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "IFCAOPlus" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "AlfaApproval" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

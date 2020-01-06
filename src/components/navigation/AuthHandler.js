@@ -22,7 +22,12 @@ function AuthHandler(props) {
 
   useEffect(() => {
     if (user !== null) {
-      props.navigation.navigate('App');
+      console.log(user);
+      if(user.isResetPass == 1){
+        props.navigation.navigate('Reset');
+      } else {
+        props.navigation.navigate('App');
+      }
     } else {
       props.navigation.navigate('Auth');
     }

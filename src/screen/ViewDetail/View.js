@@ -29,6 +29,7 @@ import getUser from "selectors/UserSelectors";
 import { getOtorisasi, approve } from "../../actions/MenuActions";
 import { selectOtorisasi } from "../../selectors/MenuSelectors";
 import numFormat from "../../components/common/numFormat";
+import moment from "moment";
 
 const status_descs = {
     P: "Pending",
@@ -47,7 +48,12 @@ function ViewDetail(props) {
         entity_cd,
         entity_name,
         descs,
-        module: modules
+        doc_date,
+        module: modules,
+        // doc_date,
+        // approval_user_name,
+        // approval_name,
+        // approval_status
     } = props.navigation.state.params.data;
 
     const user = useSelector(state => getUser(state));
@@ -59,7 +65,7 @@ function ViewDetail(props) {
     const [remarks, setRemarks] = useState("");
 
     const getOtorisasis = useCallback(
-        () => dispatch(getOtorisasi(entity_cd, doc_no, modules)),
+        () => dispatch(getOtorisasi(entity_cd, doc_no)),
         [dispatch]
     );
 
@@ -101,6 +107,7 @@ function ViewDetail(props) {
                     text: "OK",
                     onPress: () => {
                         dispatch(approve(activeType, data,user.UserId))
+                        setModalVisible(false);
                         props.navigation.navigate('Home')
                     }
                 }
@@ -155,6 +162,14 @@ function ViewDetail(props) {
                             <ListItem style={styles.infoItem}>
                                 <View>
                                     <Text style={styles.infoDesc}>
+                                        Date : {moment(doc_date).format("DD MMMM YYYY")} 
+
+                                    </Text>
+                                </View>
+                            </ListItem>
+                            <ListItem style={styles.infoItem}>
+                                <View>
+                                    <Text style={styles.infoDesc}>
                                         Staff ID : {request_staff_id}
                                     </Text>
                                 </View>
@@ -184,6 +199,7 @@ function ViewDetail(props) {
                             </ListItem>
                         </List>
                     </Tab>
+                   
                     <Tab
                         tabStyle={styles.tabGrey}
                         textStyle={styles.tabText}
@@ -214,6 +230,17 @@ function ViewDetail(props) {
                                                     >
                                                         {data.approval_name}
                                                     </Text>
+                                                    <Text
+                                                        style={
+                                                            styles.itemLocation
+                                                        }
+                                                    >
+                                                        {data.approval_user_date}
+
+                                                        {/* {moment().format("DD MMMM YYYY")} */}
+
+                                                    </Text>
+                                                   
                                                 </View>
                                             </View>
                                             <View style={styles.itemRight}>
@@ -252,12 +279,12 @@ function ViewDetail(props) {
                     </Button>
                     <Button style={style.bgYellowDark} onPress={() => onPressed("A")}>
                         <Text style={[style.textBot, { color: "#fff" }]}>
-                            Approve
+                            Approved
                         </Text>
                     </Button>
                     <Button bordered style={style.bgBotA} onPress={() => onPressed("C")}>
                         <Text style={[style.textBot, { color: "#fff" }]}>
-                            Cancel
+                            Reject
                         </Text>
                     </Button>
                 </FooterTab>

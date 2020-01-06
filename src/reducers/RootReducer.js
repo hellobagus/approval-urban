@@ -10,7 +10,7 @@ const rootReducer = combineReducers({
   status,
   menuReducer,
   detailReducer,
-  otorisasiReducer
+  otorisasiReducer,
 });
 
 export default rootReducer;

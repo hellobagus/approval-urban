@@ -11,7 +11,10 @@ import ChangePass from "../../screen/Profile/ChangePass";
 
 import Home from "../../screen/Home";
 import Detail from "../../screen/Detail";
+import Search from "../../screen/Detail/Search"
+
 import View from "../../screen/ViewDetail";
+
 
 import homeIcon from "assets/ic_home/ic_home.png";
 import settingsIcon from "assets/ic_settings/ic_settings.png";
@@ -33,6 +36,7 @@ const TabIcon = (
 ) => <Image source={icon} style={{ tintColor }} />;
 
 const ProfileStack = createStackNavigator({ Profile, Setting, ChangePass });
+
 const HomeStack = createStackNavigator({
     Home,
     Detail,

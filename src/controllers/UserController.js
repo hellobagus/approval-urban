@@ -23,6 +23,9 @@ class UserController {
         }
       });
 
+      // alert(result.Pesan);
+
+
       if(result.Error){
         return Promise.reject(result.Pesan)
       } else {
@@ -33,6 +36,24 @@ class UserController {
       return Promise.reject(error);
     }
 
+  }
+  resetPassword = async (conPass, newPass,email) => {
+    try {
+      const result = await httpClient.request({
+        url: `${this.basePath}/Resetpass`,
+        
+        method: "POST",
+        data : {
+          conpass : conPass,
+          newpass : newPass,
+          email: email
+     
+        }
+      })
+      return result;      
+    } catch (error) {
+      return Promise.reject(error);
+    }
   }
 
   changePassword = async (email,pass,conpass) => {

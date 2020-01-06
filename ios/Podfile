@@ -1,8 +1,8 @@
 platform :ios, '9.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-target 'IFCAOPlus' do
-  # Pods for IFCAOPlus
+target 'AlfaApproval' do
+  # Pods for AlfaApproval
   pod 'React', :path => '../node_modules/react-native/'
   pod 'React-Core', :path => '../node_modules/react-native/React'
   pod 'React-DevSupport', :path => '../node_modules/react-native/React'
@@ -34,7 +34,7 @@ target 'IFCAOPlus' do
 
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
-  target 'IFCAOPlusTests' do
+  target 'AlfaApprovalTests' do
     inherit! :search_paths
     # Pods for testing
   end
@@ -42,10 +42,10 @@ target 'IFCAOPlus' do
   use_native_modules!
 end
 
-target 'IFCAOPlus-tvOS' do
-  # Pods for IFCAOPlus-tvOS
+target 'AlfaApproval-tvOS' do
+  # Pods for AlfaApproval-tvOS
 
-  target 'IFCAOPlus-tvOSTests' do
+  target 'AlfaApproval-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

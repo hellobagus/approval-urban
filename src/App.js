@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, ActivityIndicator, StyleSheet } from 'react-native';
 import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react'
 import Navigation from './components/navigation';
 import Colors from './helpers/Colors';
 import { store, persist } from './reducers';
@@ -33,6 +34,7 @@ export default function App() {
 
   const loaded = (
     <Provider store={store}>
+
       <Navigation />
     </Provider>
   );

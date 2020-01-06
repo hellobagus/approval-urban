@@ -10,10 +10,12 @@ import {
     Form,
     Item,
     Label,
+    Button,
+    Footer
 } from "native-base";
 import { useSelector, useDispatch } from "react-redux";
 
-import Button from "../../components/common/Button";
+// import Button from "../../components/common/Button";
 import styles from "./styles";
 import { Style } from "../../Theme";
 
@@ -24,10 +26,10 @@ import getUser from "selectors/UserSelectors";
 export default function ChangePass(props) {
     const dispatch = useDispatch();
     const user = useSelector(state => getUser(state));
-    const logoutUser = useCallback(() => dispatch(logout()), [dispatch]);
 
     const [newPass, setNewPass] = useState("");
     const [conPass, setConPass] = useState("");
+    const [currPass, setCurrPass] = useState("");
 
     useEffect(() => {
         if (user === null) {
@@ -37,7 +39,7 @@ export default function ChangePass(props) {
 
     const savePassword = () =>{
         if(newPass == conPass){
-            dispatch(changePass(user.user,newPass,conPass));
+            dispatch(changePass(user.user,newPass,currPass));
         } else {
             alert("Password Doesn't Match")
         }
@@ -72,13 +74,31 @@ export default function ChangePass(props) {
                             style={styles.ownerAvatarImg}
                         />
                     </View>
+                    <View style={styles.ownerInfo}>
+                            <View>
+                                <Text style={styles.ownerName}>
+                                    {user.name}
+                                </Text>
+                                <Text style={styles.ownerLocation}>
+                                    {user.Group}
+                                </Text>
+                                <Text style={styles.ownerLocation}>
+                                Change Password
+
+                                </Text>
+                            </View>
+                        </View>
                 </View>
 
                 <Form>
-                    <Item>
+                    <Item floatingLabel disabled>
                         <Label style={[Style.textWhite, Style.textMedium]}>
-                            Change Password
+                            Old Password
                         </Label>
+                        <Input
+                            style={[Style.textWhite, Style.textMedium]}
+                            value={currPass} onChangeText={(val)=>setCurrPass(val)}
+                        />
                     </Item>
 
                     <Item floatingLabel disabled>
@@ -101,11 +121,12 @@ export default function ChangePass(props) {
                         />
                     </Item>
 
-
+                </Form>
+                    <View>
                     <Button style={{backgroundColor:'blue'}} onPress={savePassword}>
                         <Text style={[Style.textWhite]}>Save</Text>
                     </Button>
-                </Form>
+                    </View>
             </Content>
         </Container>
     );

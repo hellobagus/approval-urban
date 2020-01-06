@@ -5,6 +5,8 @@ import {
   Image,
   StatusBar
 } from 'react-native';
+import { Icon } from 'native-base';
+
 import { useSelector, useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import {Button , TextField, ErrorView} from '../../components/common';
@@ -30,10 +32,23 @@ function Login(props) {
   const loginUser = useCallback(() => dispatch(login(email, password)), [email, password, dispatch]);
   const passwordChanged = useCallback(value => setPassword(value), []);
   const emailChanged = useCallback(value => setEmail(value), []);
+  const [icon, setIcon] = useState("eye-off")
+  const [hidePassword, setHidePassword] = useState(true)
+
+  _changeIcon = () => {
+    icon !== "eye-off"
+      ? (setIcon("eye-off"), setHidePassword(true))
+      : (setIcon("eye"), setHidePassword(false))
+  }
 
   useEffect(() => {
     if (user !== null) {
-      props.navigation.navigate('App');
+      console.log(user.isResetPass);
+      if(user.isResetPass == 1){
+        props.navigation.navigate('Reset');
+      } else {
+        props.navigation.navigate('App');
+      }
     }
   });
 
@@ -58,10 +73,14 @@ function Login(props) {
           placeholder={strings.password}
           value={password}
           onChangeText={passwordChanged}
-          secureTextEntry
+          secureTextEntry={hidePassword}
         />
+                <Icon name={icon} size={20} style={styles.eye} onPress={() => _changeIcon()} />
+
         <ErrorView errors={errors} />
         <Button
+          // onPress={()=>props.navigation.navigate("Reset")}
+          
           onPress={loginUser}
           title={isLoading ? strings.loading : strings.login}
         />
@@ -78,4 +97,4 @@ Login.propTypes = {
   navigation: PropTypes.object.isRequired,
 };
 
-export default Login;
+export default Login 
